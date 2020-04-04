@@ -15,7 +15,6 @@ defmodule Islands.Request do
 
   @type t ::
           {}
-          | {:update_player, PlayerID.t(), String.t(), Player.gender(), pid}
           | {:add_player, String.t(), Player.gender(), pid}
           | {:position_island, PlayerID.t(), Island.type(), Coord.row(),
              Coord.col()}
