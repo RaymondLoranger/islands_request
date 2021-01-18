@@ -12,7 +12,7 @@ defmodule Islands.Request do
 
   @type t ::
           {}
-          | {:add_player, String.t(), Player.gender(), pid}
+          | {:add_player, Player.name(), Player.gender(), pid}
           | {:position_island, PlayerID.t(), Island.type(), Coord.row(),
              Coord.col()}
           | {:position_all_islands, PlayerID.t()}
