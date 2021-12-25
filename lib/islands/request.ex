@@ -3,13 +3,14 @@
 # └───────────────────────────────────────────────────────────────────────┘
 defmodule Islands.Request do
   @moduledoc """
-  Defines the `request` type for the _Game of Islands_.
+  Defines the request type for the _Game of Islands_.
 
   ##### Inspired by the book [Functional Web Development](https://pragprog.com/book/lhelph/functional-web-development-with-elixir-otp-and-phoenix) by Lance Halvorsen.
   """
 
   alias Islands.{Coord, Island, Player, PlayerID}
 
+  @typedoc "Request for the Game of Islands"
   @type t ::
           {}
           | {:add_player, Player.name(), Player.gender(), pid}

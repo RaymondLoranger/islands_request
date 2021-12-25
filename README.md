@@ -1,6 +1,6 @@
 # Islands Request
 
-Defines the `request` type for the _Game of Islands_.
+Defines the request type for the _Game of Islands_.
 
 ## Installation
 
